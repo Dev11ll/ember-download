@@ -119,6 +119,13 @@ footer { border-top: 1px solid #1f1f23; margin-top: 96px; }
 footer .wrap { padding-top: 28px; padding-bottom: 28px; display: flex; flex-wrap: wrap; gap: 16px; align-items: center; font-size: 14px; color: var(--faint); }
 footer .links { margin-left: auto; display: flex; gap: 20px; flex-wrap: wrap; }
 footer .links a { color: var(--soft); }
+footer .made { display: inline-flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+footer .made b { color: var(--text); }
+footer .soc { display: inline-flex; align-items: center; gap: 7px; padding: 6px 12px; border: 1px solid #2a2a30; border-radius: 999px; color: var(--soft); text-decoration: none; transition: border-color .15s, color .15s; }
+footer .soc:hover { border-color: #55555e; color: var(--text); }
+footer .sd { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }
+footer .sd.tw { background: #9146ff; box-shadow: 0 0 8px #9146ff; }
+footer .sd.xx { background: #e7e7ea; }
 </style>
 </head>
 <body>
@@ -250,6 +257,9 @@ footer .links a { color: var(--soft); }
     <img src="assets/logo.png" alt="" width="24" height="24">
     <b style="color: var(--text)">Ember</b>
     <span>Instant replay &amp; clipping for Windows</span>
+    <span class="made">Made by <b>Devvvvvvvvil</b>
+      <a class="soc" href="https://www.twitch.tv/devvvvvvvvil" target="_blank" rel="noopener"><i class="sd tw"></i>Twitch</a>
+      <a class="soc" href="https://x.com/Devvvvvvvvil" target="_blank" rel="noopener"><i class="sd xx"></i>X</a></span>
     <span class="links"><a class="gh-rel" href="#">All versions</a><a href="#faq">Privacy</a><span>© Ember. All rights reserved.</span></span>
   </div>
 </footer>
