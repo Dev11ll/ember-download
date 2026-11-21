@@ -273,7 +273,7 @@ footer .made b { color: var(--text); }
 <script>
 // ---- Where to download from. On GitHub Pages (you.github.io/repo) this is worked out automatically;
 // set REPO by hand ("owner/repo") only if you host the page somewhere else.
-let REPO = "";
+let REPO = location.hostname.endsWith(".github.io") ? "" : "Dev11ll/ember-download";
 (function () {
   const h = location.hostname;
   if (!REPO && h.endsWith(".github.io")) {
